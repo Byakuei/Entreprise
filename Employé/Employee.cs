@@ -19,5 +19,10 @@ namespace Employé
             this.recruitmentDate = new DateTime(year, month, day);
         }
 
+        public override String ToString()
+        {
+            return name + " " + age + " " + recruitmentDate.ToShortDateString();
+        }
+
     }
 }

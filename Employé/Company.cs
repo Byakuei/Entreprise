@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Employé
 {
-    class Entreprise
+    class Company
     {
-        List<Employee> listEmployee;
+       private List<Employee> listEmployee;
+        private String nameCompany;
+
     }
 }
