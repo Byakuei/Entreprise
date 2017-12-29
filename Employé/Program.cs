@@ -10,8 +10,24 @@ namespace Employé
     {
         static void Main(string[] args)
         {
-            Employee employee1 = new Employee("Roger", 27, 2015, 8, 1);
-            Console.Write(employee1.ToString());
+            Console.WriteLine("What do you want to do ?\n\n");
+            Console.WriteLine("-Create a new company : type 1\n-Load data of an existing company: tapez 2");
+
+            int choice = Convert.ToInt32(Console.ReadLine());
+
+            if(choice==1)
+            {
+                Console.WriteLine("What's your company's name ?");
+                string name = Console.ReadLine();
+                Console.WriteLine("How many employee does your company have ?");
+                int numberEmployee = Convert.ToInt32(Console.Read());
+            }
+            else
+            {
+                Console.WriteLine();
+                
+            }
+            
 
             Console.ReadKey();
         }
